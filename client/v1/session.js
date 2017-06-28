@@ -61,8 +61,6 @@ Object.defineProperty(Session.prototype, "proxyUrl", {
         return this._proxyUrl;
     },
     set: function (val) {
-        if (!Helpers.isValidUrl(val) && val !== null)
-            throw new Error("`proxyUrl` argument is not an valid url")
         this._proxyUrl = val;
     }
 });
